@@ -1,1 +1,71 @@
-.table
+
+table.client {
+	margin: 40px 40px 20px 40px;
+    width: 40%;
+    border: 3px solid #21213e;
+    background-color:white;
+    
+}
+
+table.client td {
+    background-color:white;
+}
+table.client td:first-child {
+    background-color:#c37db0;
+    color:#000
+
+}
+
+table.Audience {
+    margin: 40px 40px 20px 40px;
+    width: 60%;
+    border: 5px solid #c37db0;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+table.Audience th {
+	margin: 0px 40px 0px 40px;
+    width: 30%;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+	background-color:#c37db0;
+    padding: 15px;
+    text-align: center;
+    border-bottom: dotted 5px;
+}
+
+table.Audience td {
+    border-bottom: 1px solid #ddd;
+    background-color:white;
+}
+
+/* table {
+    border-collapse: collapse;
+	border: 1px solid #000;
+    width: 80%;
+    margin:auto;
+}
+
+/*
+tr {
+    vertical-align: top;
+
+}
+
+
+tr:nth-child(even) {
+    background-color:#e8b7e6;
+    color:#000
+}
+
+thead tr {
+    background-color:aquamarine;
+}
+
+td, th {
+	border: 1px solid #000;
+    padding: .5em;
+
+}
+*/

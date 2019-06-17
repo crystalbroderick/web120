@@ -1,0 +1,314 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html,body {
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+h2, p {
+    padding:0.5em;
+}
+
+p {
+    font-size:1.2em;
+}
+
+section {
+    float:left;
+    width:60%;
+    padding-left:2.5%;
+}
+
+aside {
+    float:right;
+    width:30%;
+    padding-right:2.5%;
+}
+
+section.fullwidth {
+    width:100%;
+    overflow:auto;
+    padding-left:0;
+}
+div.parallax{
+    background: url('../images/pexels-photo-1086184.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
+}
+
+.parallax-container{
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ff740054;
+    font-size: 24px;
+    padding: 25px;
+}
+.text-box{
+	height: 600px;
+	padding: 50px;
+}
+.flexcontainer {
+    text-align:center;
+    margin:auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+        
+}
+
+.container {
+  position: relative;
+}
+
+img.clicky{
+    max-width:400px;
+    height:auto;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+ 
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.text a {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+.flexbox{
+    margin:5px;
+    padding:1em;
+}  
+
+/* DESKTOP */
+@media all and (min-width:1200px) {    
+div.wrapper {
+    max-width:80%;
+    background-image: url(../images/bg.png);
+    margin:0 auto; /* TopBottom RightLeft */
+    overflow:auto; /* to remind the parent element, in this case the div.wapper, to see any floated child elements */
+}
+div.headerbg-image{
+    background-color: rgb(125, 185, 187);
+    background-image: none;
+    
+    }
+    
+img.logo {
+    width: auto;
+    margin-bottom: -2em;
+    float: left;
+    z-index: 3;
+    /* width: 5%; */
+    height: 100px;
+}
+div.header {
+    max-width:92%;
+    margin:0 auto;
+}/* TopBottom RightLeft */
+h1 {
+    float: left;
+    font-weight: normal;
+    display: inline;
+    font-size: 6em;
+    padding-left: 1%;
+    margin-bottom: 5px;
+    font-family: 'Marck Script', cursive;
+}
+figure {
+    display:inline-block;
+    margin:.75%;
+}
+    img.desktop {
+        width: 30%;
+        float: right;
+        margin-right: 1em;
+        padding: 2em;
+    }
+    
+    img.tablet, img.phone {
+        display: none;
+    }
+
+}
+
+/* TABLET */
+@media all and (min-width:627px) and (max-width:1199px) {
+ div.wrapper {
+    max-width:80%;
+    background-image: url(../images/bg.png);
+    margin:0 auto;
+    overflow:auto;
+}
+div.nav {
+    max-width:82%;
+    margin:0 auto; /* TopBottom RightLeft */   
+}
+    
+img.logo {
+    width:auto;
+    margin-bottom: -2.5em;
+    float:left;
+    z-index:3;
+    height:100px;
+}
+
+div.gallery {
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:.75%;
+}
+img.tablet {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+img.desktop, img.phone {
+        display: none;
+    }
+h1 {
+    float: left;
+    font-weight: normal;
+    display: inline;
+    font-size: 3em;
+    margin-bottom: -50px;
+    z-index:3;
+    font-family: 'Marck Script', cursive;
+}
+
+
+div.nav {
+    max-width:60%;
+    margin:0 auto; /* TopBottom RightLeft */
+    }
+}
+/* EMBED RESPONSIVELY STYLES */ 
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+/* END EMBED RESPONSIVELY STYLES */ 
+footer {
+    clear: both;
+    text-align: center;
+    padding: .5em;
+    background-color:#ff740012;
+}
+
+.embed-container.agenda-view {
+    display: none;
+}
+
+/*PHONE RULES FOR CALENDAR*/
+
+/* PHONE */
+@media all and (max-width:626px) {
+    div.wrapper {
+        width: 100%;
+        background-color:#fff;
+    }
+div.header {
+    max-width:100%;
+    margin:0 auto;
+    background-color: #ff740054;/* TopBottom RightLeft */   
+}
+    h1 {
+    display: inline;
+    width: 100%;
+    padding-left: 1%;
+    font-size:2em;
+    font-family: 'Indie Flower', cursive;
+    }
+    
+    img.phone {
+        width: 100%;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+    img.logo {
+        width:10%;
+    }
+    aside {
+        visibility: hidden;
+    }
+    section {
+        width:100%;
+        float:none;
+        
+    }
+div.parallax {
+    height: 100px;
+    background: url(../images/phone_nav_img.jpg) no-repeat cover;
+}
+    .parallax-container {
+       padding: 5px;
+    }
+    
+    img.phone {
+        width: 100%;
+        max-height: 300px;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+}
+
+@media all and (max-width:1440px) {
+   /* show agenda view calendar */
+    div.embed-container.agenda-view {
+        display:block; 
+    }
+    /* Hide Month ViewCalendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}

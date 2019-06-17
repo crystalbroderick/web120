@@ -2,16 +2,11 @@
     include 'includes/header.php';
 ?>
 <?php
-    include 'includes/simple.php';
+    include 'includes/multiple.php';
     ?>
     <p class="clear-recaptcha"></p>
 </section>
 <!-- START LEFT COL -->
-<aside>
-    <h3>Office Hours</h3>
-    <p>Scheduled online to meet online</p>
-
-</aside>
  
 <!-- START Footer -->
 <?php

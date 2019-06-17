@@ -5,10 +5,30 @@ html {
     background-color:#56A4BA;
 }
 
+i.logo {
+    color:#003366;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+    margin-left:1%;
+}
+
 div.wrapper {
     background-color:#fff;
     overflow:auto;
 }
+
+section {
+    float:left;
+    width:64%;
+    padding-left:2.5%;
+}
+
+aside {
+    float:right;
+    width:26%;
+    padding-right:2.5%;
+}
+
 
 h1>a {
     text-decoration: none;
@@ -40,6 +60,11 @@ div.embed-container iframe {
     height: 100%;
 }
 
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
 footer {
 	clear:both;
 }
@@ -47,27 +72,17 @@ footer {
 /* START RESPONSIVE STYLES */
 
 /* DESKTOP */
-@media all and (min-width:1400px) {
+@media all and (min-width:1200px) {
 	
    div.wrapper {
 		width:80%;
 		margin:auto;
 	}
-
-    section {
-		width:65%;
-		float:left;
-	}
-	
-     aside {	
-		width:34%;
-		float:right;
-	}
-			
 	
     img.desktop {
-      		 float:left;
-       		width:50%;
+        float:left;
+       	width:50%;
+        margin-right: 2em;
    	 }
     
     img.tablet, img.phone {
@@ -83,44 +98,44 @@ footer {
 
 
 /* TABLET */
-@media all and (min-width:737px) and (max-width:1399px) {
+@media all and (min-width:501px) and (max-width:1199px) {
 	
-	section {
-		width:60%;
-		float:left;
-	}
-	
-	aside {	
-		width:39%;
-		float:right;
-	}
-	
-            img.tablet {
-       		width:100%;
-           }
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
     
-           img.phone, img.desktop {
-        		display:none;
-           } 
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
     
-    /* Change background color of navigation on selected page */
-           ul.topnav li a.selected {
-        		background-color: #56A4BA;
-        		color:#000;
-          }
-  }
+    img.tablet {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.phone, img.desktop {
+        display:none;
+    }
+    
+}
 
 
 /* PHONE */
-@media all and (max-width:736px) {
+@media all and (max-width:500px) {
+    div.wrapper {
+        width: 100%;
+    }
     
     img.phone {
-       		width:100%;
+       	width:100%;
     }
     
     img.tablet, img.desktop {
-        		display:none;
-    }  
+        display:none;
+    }
 
 }
 

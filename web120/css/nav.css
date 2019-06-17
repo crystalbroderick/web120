@@ -1,6 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
+.topnav .icon {
+    display: none;
+}
 
+.topnav {
+    margin: auto;
+    background-color: rgb(95,95,95);
+    overflow: auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
@@ -37,6 +56,15 @@ ul.topnav li.icon {display: none;}
     float: right;
     display: inline-block;
    }
+        .topnav a.icon {
+        float: right;
+        display: block;
+    }
+        .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */

@@ -1,12 +1,15 @@
 <?php
     include 'includes/header.php';
 ?>
-    <p>This page is a Google Doc with a low fidelity layout look at the final project for my client. It also will provide a very basic naviagation flowchart for the final</p>
+    <p><iframe src="https://docs.google.com/document/d/e/2PACX-1vSVQCf8gwQ0qutDkKVRaXRpZTCziaLl4Fc6BIJt6HondFc1ClkBHp8Yxt_g4LdaA_KXhQBcnTZztnUb/pub?embedded=true" width="600px"></iframe></p>
 </section>
 <!-- START LEFT COL -->
 <aside>
     <h3>Layout Resources</h3>
-    <p>list 2 links to useful sites about layouts</p>
+    <ul>
+        <li><a href="https://colibriwp.com/blog/website-layout-design-ideas/">Colibriwp</a></li>
+        <li><a href="https://www.crazyegg.com/blog/best-website-layouts/"> Crazyegg</a></li>
+    </ul>
 
 </aside>
  
